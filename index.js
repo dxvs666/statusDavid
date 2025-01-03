@@ -91,7 +91,7 @@ app.listen(port, () => {
 async function setActivity() {
     const time = formatTime();
     client.user.setActivity({
-        name: `dxvs [${time}]`,
+        name: `dxvs[${time}]`,
         type: ActivityType.Watching,
         url: 'https://www.tiktok.com/@javinarjj',
         assets: {
