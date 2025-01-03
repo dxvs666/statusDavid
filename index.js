@@ -32,7 +32,7 @@ client.on('messageCreate', (message) => {
     userMessageData.count += 1;
 
     if (userMessageData.count >= 5) {
-        message.channel.send(`TANGINA MO WAG KA MAG SPAM ${message.author}!`);
+        message.channel.send(`TANGINA MO WAG KA MAG SPAM ${message.author}!!`);
         userMessageData.count = 0;
         clearTimeout(userMessageData.timer); // Clear previous timeout
     }
