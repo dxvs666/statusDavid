@@ -91,7 +91,7 @@ app.listen(port, () => {
 async function setActivity() {
     const time = formatTime();
     client.user.setActivity({
-        name: `David [${time}]`,
+        name: `dxvs [${time}]`,
         type: ActivityType.Watching,
         url: 'https://www.tiktok.com/@javinarjj',
         assets: {
@@ -108,7 +108,7 @@ async function setActivity() {
 }
 
 function updateStatus() {
-    client.user.setActivity('David', {
+    client.user.setActivity('dxvs', {
         type: ActivityType.Watching,
     });
     client.user.setPresence({ status: 'dnd' });
